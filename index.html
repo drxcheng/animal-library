@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Animal Library - Responsive Web Design - Coursera</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+  </head>
+  <body>
+    <h1>Animal Library</h1>
+
+    <ul id="category-nav" class="nav nav-pills nav-justified category-nav">
+    </ul>
+
+    <ul id="animal-list" class="animal-list">
+    </ul>
+
+    <script id="category" type="text/x-handlebars-template">
+      {{#each category}}
+      <li role="presentation">
+        <a href="#" data-index="{{@index}}">{{name}}</a>
+      </li>
+      {{/each}}
+    </script>
+
+    <script id="animal" type="text/x-handlebars-template">
+      {{#each animals}}
+      <li>
+        <h3>{{name}}</h3>
+        <p>{{description}}</p>
+        <div class="row">
+          <img class="col-md-6 col-xs-12" src="{{image1}}">
+          <img class="col-md-6 col-xs-12" src="{{image2}}">
+        </div>
+      </li>
+      {{/each}}
+    </script>
+
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/handlebars-v3.0.3.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="AnimalsData.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,21 @@
+h1 {
+  text-align: center;
+}
+
+ul {
+  max-width: 960px;
+  margin: 24px auto;
+  padding: 0;
+  list-style: none;
+}
+ul li {
+  padding: 24px;
+}
+
+.category-nav {
+  font-size: 24px;
+}
+
+.animal-list {
+  text-align: justify;
+}
